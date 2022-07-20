@@ -15,7 +15,7 @@ contract InsertNameHereOrg{
     }
     
     function get() public view returns(string) {
-        return donatorList.toString();
+        return donatorList;
     }
     
     function set(int value) private {
@@ -26,7 +26,7 @@ contract InsertNameHereOrg{
         donateCount+=1;
     }
 
-    function getBalance() private view returns(int) {
+    function getBalance() private view returns(uint) {
         return wallet.balance;
     }
 }
